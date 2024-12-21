@@ -1,4 +1,2 @@
-Yo y'as rien a voir ici ^^
-
+Yo y'as rien a voir ici, ceci est juste le code du website de Bloraigris Studios.
 Website : https://bloramc.github.io/blorastudioswebsite/
-Vous pouvez fork se site web si vous voulez créé votre propre site web.

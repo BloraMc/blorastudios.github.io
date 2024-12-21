@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; /* Added a modern and clean font */
     background-color: #0d1117;
     color: #c9d1d9;
 }
@@ -12,6 +12,9 @@ header {
     align-items: center;
     padding: 10px 20px;
     border-bottom: 2px solid #0a84ff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo-container .logo {
@@ -29,31 +32,52 @@ nav .nav-links {
 nav .nav-links li a {
     text-decoration: none;
     color: #c9d1d9;
+    font-weight: 500;
     transition: color 0.3s;
 }
 
 nav .nav-links li a:hover {
-    color: #0a84ff;
+    color: #ff79c6; /* Changed hyperlink hover color to pink */
 }
 
 .section {
     padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .section h1, .section h2 {
     color: #0a84ff;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.video-gallery {
+.section p {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.button-gallery {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.video-gallery iframe {
-    width: 300px;
-    height: 170px;
-    border: 2px solid #0a84ff;
+.btn {
+    display: inline-block;
+    background-color: #0a84ff;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #ff79c6; /* Changed button hover color to pink */
+    transform: translateY(-2px);
 }
 
 footer {
@@ -62,3 +86,38 @@ footer {
     padding: 20px;
     border-top: 2px solid #0a84ff;
 }
+
+footer p {
+    margin: 0;
+}
+
+/* Hyperlink Colors */
+section a {
+    color: #ff79c6; /* Updated hyperlinks to pink */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+section a:hover {
+    color: #0a84ff; /* Hover effect for hyperlinks */
+}
+
+/* Enhanced UI with subtle shadows */
+header, .btn, footer {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Added container max-width for better layout */
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Smooth scrolling for better navigation */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');

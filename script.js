@@ -1,1 +1,1 @@
-console.log("Welcome to BloraigrisStudios!");
+console.log("Wow que faites vous dans la console mdr? Bah salut de la pars du créateur du site de Bloraigris Studios mdr");
